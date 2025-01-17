@@ -1,0 +1,322 @@
+/* 全体のスタイル */
+body {
+    margin: 0;
+    font-family: 'Kiwi Maru', 'Slabo 27px', sans-serif;;
+    background-color: #FEF9E1;
+    color: #6D2323;
+    text-align: center;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* 方眼のサイズを調整 (20px四方) */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+/* ロゴ画像のスタイル */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* パディングを二倍に調整 */
+    background-color: #a31d1d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 120px; /* ヘッダーの高さを設定 */
+}
+
+.header-left .logo {
+    height: 120px; /* ロゴの高さを調整 */
+    margin-right: 40px; /* タイトルとの間に余白を追加 */
+    vertical-align: middle; /* テキストと中央揃え */
+}
+
+
+/* 右側のナビゲーションメニュー */
+.header-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.header-right ul li {
+    display: inline;
+}
+.header-right ul li a {
+    text-decoration: none;
+    font-family: 'Slabo 27px', serif; /* 英語用フォント */
+    color: #FEF9E1;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.header-right ul li a:hover {
+    color: #333;
+}
+
+
+/* 画像セクション */
+.header-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF9E1;
+    padding: 20px ;
+}
+
+.header-background {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+}
+
+/* Introduction セクション */
+#introduction {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6D2323;
+}
+
+/* 長方形コンテナのスタイル */
+.rectangle-container {
+    display: flex;
+    flex-direction: column; /* 上下に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 60px; /* 長方形間の間隔 */
+    margin-top: 20px;
+}
+
+/* 長方形のスタイル */
+.rectangle {
+    width: 600px; /* 長方形の幅を変更 */
+    height: 300px; /* 長方形の高さを変更 */
+    border: 2px solid #6D2323; /* 外枠の色と太さ */
+    background-color: #FEF9E1; 
+    box-sizing: border-box; /* ボーダーを含めたサイズ管理 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* パディングの増加 */
+    opacity: 0;
+    transform: translateY(100%); /* 初期位置を下外に設定 */
+    animation: floatIn 9s ease-out forwards; /* アニメーションを追加 */
+}
+/* 長方形が浮き出てくるアニメーション */
+@keyframes floatIn {
+    0% {
+        transform: translateY(100%); /* 画面下からスタート */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 元の位置に移動 */
+        opacity: 1; /* 不透明に */
+    }
+}
+
+/* アイコンの大きさ */
+.icon {
+    width: 250px; /* アイコンの幅を変更 */
+    height: 250px; /* アイコンの高さを変更 */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/* プロフィール内容 */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.details {
+    text-align: left;
+    margin-left: 30px;
+    color: #a31d1d;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a31d1d;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #a31d1d;
+}
+
+
+
+
+
+/* メインコンテンツ */
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a31d1d;
+    color: #fff;
+}
+
+
+
+  .conversation {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* メッセージアプリ風トーク */
+  .message {
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 80%;
+    display: inline-block;
+  }
+  
+  /* インタビュアーのメッセージ */
+.message.interviewer {
+    background-color: #A31D1D; /* インタビュアーのメッセージ背景色 */
+    color: #FEF9E1; /* フォントの色 */
+    align-self: flex-start;
+}
+
+/* 話者のメッセージ */
+.message.speaker {
+    background-color: #E5D0AC; /* 話者のメッセージ背景色 */
+    color: #A31D1D; /* フォントの色 */
+    align-self: flex-end;
+}
+
+ /* 初期状態：透明で少し下に位置 */
+.message.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 8s ease, transform 88s ease;
+}
+
+/* フェードイン状態 */
+.message.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  
+
+/* コンテンツのスタイル */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* 題名のスタイル */
+.title {
+    color: #FEF9E1;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* GIFのスタイル */
+.gif {
+    width: 55%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    /* 配置調整のためのスタイル */
+    position: relative; /* 必要に応じて relative を設定 */
+    margin: 0 auto; /* 中央揃え */
+    top: 15px; /* 縦方向の位置調整 */
+    left: 15%; /* 横方向の位置調整 */
+}
+
+
+/* 大きい長方形 */
+.rectangles {
+    width: 50%; /* 横幅を狭める */
+    height: 200px;
+    background-color: #a31d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 50px; /* パディングを調整 */
+    position: relative; /* 小さい長方形の位置を調整するために relative を追加 */
+}
+
+/* 小さい長方形（文字部分） */
+.small-rectangle {
+    width: 40%; /* 横幅を少し狭める */
+    height: auto;
+    background-color: #FEF9E1;
+    border: 2px solid #6D2323;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+    
+    /* 小さい長方形の位置調整 */
+    position: absolute;
+    top: 10%; /* 大きい長方形の中央に配置 */
+    left: -60px; /* 左にはみ出す量を調整 */
+    transform: translateY(-50%); /* 縦方向の中央揃え */
+}
+/* Episode 2のレイアウトスタイル */
+.episode-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px; /* 画像とタイトルの間隔 */
+}
+
+/* 画像のスタイル */
+.episode-image {
+    width: 50%; /* 画像の幅を調整 */
+    height: auto;
+   
+}
+
+/* タイトルのスタイル */
+.episode-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6D2323;
+    text-align: left; /* タイトルを左揃え */
+    margin: 0; /* 不要な余白を削除 */
+}
