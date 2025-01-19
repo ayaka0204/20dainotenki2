@@ -350,3 +350,46 @@ footer {
     height: auto;
    
 }
+/* モバイル対応: 画面幅が768px以下の場合 */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center;
+    }
+
+    .content {
+        width: 80%; /* モバイルでは幅を広く */
+        text-align: center;
+    }
+
+    .image {
+        width: 80%; /* モバイルでは画像を広く */
+        margin-top: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem; /* 見出しのサイズを小さく */
+    }
+
+    .content p {
+        font-size: 1rem; /* テキストのサイズを調整 */
+    }
+}
+
+/* タブレット対応: 画面幅が1024px以下の場合 */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center;
+    }
+
+    .content {
+        width: 70%; /* タブレットでは幅を調整 */
+        text-align: center;
+    }
+
+    .image {
+        width: 70%; /* タブレットでも画像を調整 */
+        margin-top: 20px;
+    }
+}
