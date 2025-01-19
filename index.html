@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Kiwi+Maru:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <p>Loading...</p>
+        <div id="loading-screen"></div>
+    </div>
     <!-- 固定バーナー -->
     <div class="fixed-banner">
         <nav>
@@ -115,7 +121,9 @@
                     親は一生懸命教育資金をちゃんと送ってくれたけど、<br>
                     勉強はあんまりしていなかった。<br>
                     ただ楽しいことばっかりして、<br>
-                    すごい幸せだった。<br>
+                    すごい幸せだった。</div>
+                  <div class="message interviewer">うんうん。</div>
+                  <div class="message speaker">
                     将来自分がどんな風になるかっていうのは、<br>
                     あんまり考えなかった。<br>
                     まだ子供でした。<br>
@@ -133,7 +141,10 @@
                     って感じだった。<br>
                     鹿児島の城ケ崎ホテルっていうホテルで<br>
                     美味しいものが<br>
-                    食べられるって電話でいうもんですから。<br>
+                    食べられるって電話でいうもんですから。</div>
+                  <div class="message interviewer">美味しいものにはつられちゃうよね（笑）</div>
+                  <div class="message speaker"> 
+                    ね。<br>
                     あっちの方は、お母さんとその息子が来て、<br>
                     ランチを食べて<br>
                     そのあとにすぐ結婚っていう流れでした。<br>
@@ -149,14 +160,17 @@
                     昔式で、封建式で、洗面器をたらいって言うんだよね。<br>
                     洗うものも別々で、<br>
                     竿を1番上は男のものを干し、<br>
-                    下の方に女のものを干すという決まりもあった。<br>
-                    そういう鹿児島の人やから、<br>
+                    下の方に女のものを干すという決まりもあった。</div>
+                  <div class="message interviewer">そうなの！？</div>
+                  <div class="message speaker"> 
+                    そう。鹿児島の人やから、<br>
                     宮崎でのほほんと過ごしてた私にとっては<br>
                     ショックだった。毎日が涙を流しながらの生活で、、<br>
                     20歳はもうひっくり返ったのよ、<br>
                     女の子だったから親から愛されて楽しく過ごしたのが、<br>
                     一遍にもう地獄のとこにやられたような感じ。<br>              
                     </div>
+                <img src="images/okoru.gif" class="okoru-image">
                 　<div class="message interviewer">
                       なるほど。<br>  
                       結婚して、それからは<br>
@@ -167,7 +181,9 @@
                     西郷さんの感じで、やっぱり日本人は<br>
                     昔の封建的な考え方があったの。<br>  
                     今の人は20歳にして頑張って、<br>
-                    自分の免許をで取得するじゃないの。<br>  
+                    自分の免許をで取得するじゃないの。</div>
+                    <div class="message interviewer">たしかに。。</div>  
+                    <div class="message speaker"> 
                     でも昔は大学卒業の人は少なかったわ。<br>  
                     3分の1ぐらいだったな。<br>  
                     正しいところは、やっぱり博物館とか、美術館とか、、<br> 
@@ -200,7 +216,9 @@
                     言われていたの。<br>
                     本当、苦しかった。毎日1000円持って<br>
                     お買い物に行って、<br>
-                    1000円で食料品を買って毎日の生活をしましたね。<br>
+                    1000円で食料品を買って毎日の生活をしましたね。</div>
+                    <div class="message interviewer">すごく大変そう、、</div>
+                    <div class="message speaker"> 
                     ぼやきはしたけど、やっぱり<br>
                     自分の決断で決めたわけだから。<br>
                     結婚も親が決めてくれたけど、<br>
@@ -219,7 +237,7 @@
         
         
         <section id="Episode2">
-            <h2>Episode 2</h2>
+            <h2>(Episode 2)</h2>
             <div class="episode-layout">
                 <img src="images/IMG_1544.PNG" alt="結婚式の画像" class="episode-image">
                 <div class="episode-title">
@@ -283,6 +301,15 @@
         
         <section id="Episode3">
             <h2>Episode 3</h2>
+            <div class="episode-layout">
+                <img src="images/怒っている.GIF"  class="angry-image">
+                <div class="episode-title">
+                    <h3>
+                        
+                        <br>
+                        努力は報われる。</h3>
+                </div>
+            </div>
             <div class="phone-frame">
                 <div class="conversation">
                     <div class="message interviewer">20代で学んだ教訓を教えてほしいです。</div>
@@ -300,7 +327,9 @@
                         毎日ガミガミ、ガミガミ言われてたわねわね。<br>
                         夫は、 大学で教授から、痛めつけられるの。<br>
                         だから、私にその反動が来て、<br>
-                        しかめっ面で帰ってこられて、怒られてた。<br>
+                        しかめっ面で帰ってこられて、怒られてた。</div>
+                        <div class="message interviewer">私だったら耐えられない！</div>
+                    <div class="message speaker"> 
                         潔癖な人やったから、髪の毛が落ちてるとか、<br>
                         洗面所も水が垂れていたらあかんとか、<br>
                         そういういろんなことを1つ1つを<br>
@@ -310,7 +339,7 @@
                     </div>
                     <div class="message interviewer">
                         では、結婚して、<br>
-                        その結婚式では幸せを感じたんだね<br>。
+                        その結婚式では幸せを感じたんだね<br>
                         結婚までの流れとしては、<br>
                         大学生の夏休みに鹿児島のホテルで会って、<br>
                         3回目に会った時が結婚式だったの？</div>  
@@ -329,9 +358,16 @@
                     ストレスとかでげそって、痩せましたよ。<br>
                     20代で学んだ教訓は、苦しいことが全部倍になって、<br>
                     後で帰ってくるってことが今わかった。<br>
-                </div> 
-                    <div class="message interviewer">つらい生活を送っていたんだね、、
-                        たくさんお話聞かせてくれてありがとう。
+                   </div> 
+                <div class="message interviewer">つらい生活を送っていたんだね、、</div>
+                <div class="message speaker">そうね、、だけど<br>
+                    こうしていまたくさんの孫に恵まれて、<br>
+                    すごく幸せ。<br>
+                    あの時頑張って耐えてよかったって。
+                </div>
+                 <div class="message interviewer">そんなことがあったなんて知らなかった。<br>
+                    たくさんお話聞かせてくれてありがとう。
+                </div>
                     </div>
             </div>
             
@@ -341,7 +377,7 @@
 
     <!-- フッター -->
     <footer>
-        <p>&copy; 2025 春は必ず来る. All rights reserved.</p>
+        <p>&copy; 春は必ず来る</p>
     </footer>
 </body>
 </html>

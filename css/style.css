@@ -14,6 +14,29 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+#loading {
+    background-color: #E5D0AC;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+
+#loading-screen {
+    background-color: #d5edeb;
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    translate: 0 100vh;
+}
+
+#loading p {
+    font-size: 7rem;
+    
+    color: #A31D1D;
+}
+
 
 
 
@@ -302,7 +325,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    gap: 20px; /* 画像とタイトルの間隔 */
+    gap: 0px; /* 画像とタイトルの間隔 */
 }
 
 /* 画像のスタイル */
@@ -319,4 +342,11 @@ footer {
     color: #6D2323;
     text-align: left; /* タイトルを左揃え */
     margin: 0; /* 不要な余白を削除 */
+}
+
+/* 画像のスタイル */
+.angry-image {
+    width: 70%; /* 画像の幅を調整 */
+    height: auto;
+   
 }

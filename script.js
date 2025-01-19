@@ -1,20 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target); // 一度アニメーションしたら監視を停止
-                }
-            });
-        },
-        { threshold: 0.1 } // 要素が10%見えたらトリガー
-    );
 
-    // トークの各メッセージを監視対象に追加
-    const messages = document.querySelectorAll(".message");
-    messages.forEach(message => {
-        message.classList.add("hidden"); // 初期状態を設定
-        observer.observe(message);
-    });
+const loadingAreaGrey = document.querySelector('#loading');
+const loadingText = document.querySelector('#loading p');
+
+window.addEventListener('load', () => {
+  
+  loadingAreaGrey.animate(
+    {
+      opacity: [1, 0],
+      visibility: 'hidden',
+    },
+    {
+      duration: 2000,
+      delay: 1200,
+      easing: 'ease',
+      fill: 'forwards',
+    }
+  );
+
+
+  loadingText.animate(
+    [
+      {
+        opacity: 1,
+        offset: .8  //80%
+      },
+      {
+        opacity: 0,
+        offset: 1  //100%
+      },
+    ], 
+    {
+      duration: 1200,
+      easing: 'ease',
+      fill: 'forwards',
+    }
+  );
 });
+
+
+
+
+
+
+
+
