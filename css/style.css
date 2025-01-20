@@ -52,6 +52,10 @@ body {
     top: 0;
     z-index: 1000;
     height: 120px; /* ヘッダーの高さを設定 */
+    position: sticky;
+    
+    
+    
 }
 
 .header-left .logo {
@@ -277,7 +281,7 @@ footer {
 
 /* GIFのスタイル */
 .gif {
-    width: 55%;
+    width: 75%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
@@ -365,6 +369,11 @@ footer {
     .image {
         width: 80%; /* モバイルでは画像を広く */
         margin-top: 20px;
+    }
+
+    .footer {
+        width: 70%; /* モバイルでは画像を広く */
+        margin-top: 0px;
     }
 
     .content h1 {
